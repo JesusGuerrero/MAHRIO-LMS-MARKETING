@@ -1,0 +1,42 @@
+<div class="navbar navbar-default navbar-fixed-top no-radius" style="font-size: 1.1em; background: white; line-height: 43px;">
+    <div class="media container" style="overflow: visible">
+        <div class="media-left" style="vertical-align: middle">
+            <h1>LMS</h1>
+        </div>
+        <div class="media-body" style="overflow: visible; vertical-align: middle">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Menu 1
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" (click)="drop1 = !drop1" href="javascript:void(0)">
+                        Drop1
+                    </a>
+                    <div class="dropdown-menu" [ngbCollapse]="!drop1" style="right: 0; left: inherit;">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Menu 2
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="media-right" style="min-width: 300px; vertical-align: middle">
+            <ul class="nav nav-pills pull-right">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-primary">
+                        LOG IN
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
